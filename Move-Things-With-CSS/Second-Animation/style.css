@@ -1,0 +1,27 @@
+.box {
+  margin-top: 205px;
+  margin-left: 205px;
+  width: 200px;
+  height: 200px;
+  background-color: lightblue;
+  border: 1px solid black;
+  animation-duration: 2s;
+  animation-name: squarePath;
+  animation-iteration-count: infinite;
+}
+
+@keyframes squarePath {
+  0%,
+  100% {
+    transform: translate(-100%, -100%);
+  }
+  25% {
+    transform: translate(100%, 100%);
+  }
+  50% {
+    transform: translate(-100%, 100%);
+  }
+  75% {
+    transform: translate(100%, -100%);
+  }
+}
